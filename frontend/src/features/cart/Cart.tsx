@@ -12,11 +12,11 @@ const Cart = () => {
     <div>
       <h2>Shopping Cart</h2>
       <p>Total Quantity : {totalQuantity}</p>
-      <p>Total Price : {totalPrice}</p>
+      <p>Total Price : {totalPrice.toFixed(0)}</p>
 
       <ul>
         {items.map((item) => (
-          <li key={item.id}>
+          <li className="my-4" key={item.id}>
             {" "}
             {item.name} - ${item.Price}
             <button

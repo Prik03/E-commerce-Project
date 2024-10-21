@@ -55,7 +55,7 @@ import React from "react";
 import products, { Product } from "../../productData";
 import { additems } from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
-const ProductList: React.FC = () => {
+const ProductList = () => {
   const dispatch = useDispatch();
 
   return (
